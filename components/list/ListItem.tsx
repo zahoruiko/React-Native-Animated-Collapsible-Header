@@ -2,12 +2,7 @@ import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { TListData } from '../../utils/fakeData';
 
-export type TListItemProps = {
-  item: TListData;
-  handleOnItemPress: (id: number) => void;
-}
-
-const ListItem: React.FC<TListItemProps> = (item, handleOnItemPress) => (
+const ListItem = (item: TListData, handleOnItemPress: (id: number) => void) => (
   <TouchableOpacity 
     style={styles.itemWrapper} 
     key={item.id} 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Animated, StyleSheet } from 'react-native';
 import { TListData } from '../../utils/fakeData';
-import { TListItemProps } from './ListItem';
+import ListItem from './ListItem';
 
 type TListProps = {
   data: TListData[];
-  listItem: TListItemProps;
-  scrollY: Animated.AnimatedInterpolation<string | number>;
+  listItem: typeof ListItem;
+  scrollY: any;
   paddingTop: number;
   handlerOnItemPress: (id: number) => void;
 }
