@@ -27,7 +27,6 @@ const HeaderImage: React.FC<THeaderImageProps> = ({ headerTranslateY, imageOpaci
         }}
       />
       <LinearGradient colorList={gradientColorsList} angle={270} />
-      {/* <LinearGradient colorList={gradientColorsList} angle={270} style={{ width: '100%' }} /> */}
     </Animated.View>
   );
 };
